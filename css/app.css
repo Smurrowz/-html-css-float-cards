@@ -42,12 +42,13 @@ img{
 font-weight: 700;
 }
 .card-name{
-  padding-top: 5px
+  padding-top: 5px;
 }
 .card a{
 text-decoration: none;
 color: aqua;
 transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+border-radius: 5px;
 }
 .card{
   background-color: rgb(41, 12, 68);
@@ -72,7 +73,6 @@ transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
   margin: 0 -10px;
 }
 .card a:hover{
- font-size: 20px;
  box-shadow: inset 200px 0 0 0 white;
  color: rgb(41, 12, 68);
  border: 1px solid white;
@@ -82,4 +82,12 @@ transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
 .main-title:hover{
   margin-bottom: 250px;
   transition: ease-in-out 1s;
+}
+
+.card-name:hover{
+  padding-left: 200px;
+  transition:1s;
+}
+.card-name::before{
+content: "⇠";
 }
