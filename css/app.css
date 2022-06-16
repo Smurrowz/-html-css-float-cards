@@ -8,7 +8,6 @@
 
 img{
   max-width: 100%;
-  
 }
 
 .container{
@@ -32,6 +31,8 @@ img{
   height: 100px;
   line-height: 100px;
   color: coral;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .card-img{
   float: left;
@@ -46,6 +47,7 @@ font-weight: 700;
 .card a{
 text-decoration: none;
 color: aqua;
+transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 .card{
   background-color: rgb(41, 12, 68);
@@ -68,4 +70,16 @@ color: aqua;
 }
 .row{
   margin: 0 -10px;
+}
+.card a:hover{
+ font-size: 20px;
+ box-shadow: inset 200px 0 0 0 white;
+ color: rgb(41, 12, 68);
+ border: 1px solid white;
+ border-radius: 5px;
+}
+
+.main-title:hover{
+  margin-bottom: 250px;
+  transition: ease-in-out 1s;
 }
